@@ -22,6 +22,8 @@
             <h1 class="slide__title">
                 Biz bilan IT ni mukammal o'rganing
             </h1>
+            <div class="circle"></div>
+            <div class="circle1"></div>
         </div>
         <div class="slide-item slide-list2">
             <h2 class="web">
@@ -37,12 +39,23 @@
                     <h2 class="web-item__text">Back-End</h2>
                 </div>
             </div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
         </div>
         <div class="slide-item structure-front">
-            <h2 class="structure-front__text">
-                Front-End Dasturlash
-            </h2>
             <img src="assets/img/struktura site.jpeg" alt="" class="structure-front__img">
+            
+            <div class="circle5">
+                <h2 class="type-left">
+                    Front-End <br>
+                    Dasturchi
+                </h2>
+            </div>
+            <div class="circle6">
+                <h2 class="type-right">
+                    <span class="type"></span>
+                </h2>
+            </div>
         </div>
         <div class="slide-item programming-languages">
             <h2 class="programming-languages__title">
@@ -106,12 +119,31 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/typed.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
 
     <script>
+        
         $('.single-item').slick({
             dots: true,
         });
+
+        
+    //    var typed = new Typed('.type-left .type', {
+    //         strings: ['Front-End', 'Dasturchi'],
+    //         typeSpeed: 200,
+    //         backSpeed: 100,
+    //         loop: true,
+    //         // fadeOut: true,
+    //     });
+       var typed = new Typed('.type-right .type', {
+            strings: ['HTML', 'CSS', 'JavaScript'],
+            typeSpeed: 200,
+            backSpeed: 100,
+            loop: true,
+            // fadeOut: true,
+        });
+
     </script>
 </body>
 </html>
